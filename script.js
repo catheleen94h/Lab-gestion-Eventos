@@ -50,3 +50,25 @@ botonEnlaces.addEventListener('click', () => {
 });
 
 
+
+const contenedor = document.getElementById('contenedor');
+
+const elementosSegundo = document.querySelectorAll('.segundo');
+
+const terceroEnOl = document.querySelector('ol .tercero');
+
+contenedor.textContent = '¡Hola!';
+
+const footer = document.querySelector('.footer');
+footer.classList.add('principal');
+
+footer.classList.remove('principal');
+
+const nuevoLi = document.createElement('li');
+
+nuevoLi.textContent = 'cuatro';
+
+const listaUl = document.querySelector('ul');
+if (listaUl) {
+    listaUl.append(nuevoLi);
+}
